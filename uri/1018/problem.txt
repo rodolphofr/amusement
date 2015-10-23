@@ -1,0 +1,9 @@
+In this problem you have to read an integer number and calculate the smallest possible number of banknotes in which the value may be decomposed. The banknotes possible are 100, 50, 20, 10, 5, 2 e 1. Print the value read and the list of banknotes.
+
+Input
+
+The input file contain an integer number N (0 < N < 1000000).
+
+Output
+
+Print the read number and the minimum quantity of each necessary banknotes in portuguese language like as the given example (with comma as the decimal point). Do not forget to print the end line after each line, otherwise you will get “Presentation Error”.
