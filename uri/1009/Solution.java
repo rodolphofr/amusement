@@ -7,17 +7,17 @@ public class Solution {
  
 	    Scanner scanner = new Scanner(System.in);
          
-        String name = scanner.nextLine();
-        double salary = scanner.nextDouble();
-        double sold = scanner.nextDouble();
+            String name = scanner.nextLine();
+            double salary = scanner.nextDouble();
+            double sold = scanner.nextDouble();
          
-        double total = salary + (sold * 0.15);
+            double total = salary + (sold * 0.15);
          
-        DecimalFormat df = new DecimalFormat(".00");
+            DecimalFormat df = new DecimalFormat(".00");
          
-        System.out.println("TOTAL = R$ " + df.format(total));
+            System.out.println("TOTAL = R$ " + df.format(total));
          
-        scanner.close();
+            scanner.close();
 	  
     }
 
