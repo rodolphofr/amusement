@@ -1,0 +1,13 @@
+A string is traditionally a sequence of characters, either as a literal constant or as some kind of variable. (Wikipedia)
+In this problem we will test your knowledge of Java Strings. A string can be declared in following way:
+
+String my_string="Hello World!"
+Each elements of a string is called a character. Number of characters in a string is called string length.
+
+In this problem you wil be given two strings A and B as input. They will contain only lower case english letters. You have to answer the following questions:
+
+1. What is the total length of string A and B?
+2. Is string A lexicographically larger than than B? print "Yes" or "No".
+3. Make first letter of both the strings uppercase and print them in a single line seperated by a space.
+
+[Note: Lexicographic order is also known as alphabetic order dictionary order. So "ball" is smaller than "cat", "dog" is smaller than "dorm" and "dogg". ]
