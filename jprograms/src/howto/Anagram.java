@@ -3,21 +3,8 @@ package howto;
 import java.util.Arrays;
 
 public class Anagram {
-
-	public static void main(String[] args) {
-
-		String a = "alegria";
-		String b = "regalia";
-
-		if (areAnagram(a, b)) {
-			System.out.println("Yes");
-		} else {
-			System.out.println("No");
-		}
-
-	}
-
-	public static boolean areAnagram(String a, String b) {
+	
+	static boolean areAnagram(String a, String b) {
 		if (a.length() != b.length()) {
 			return false;
 		} else {
@@ -34,5 +21,14 @@ public class Anagram {
 			}
 		}
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(areAnagram("alegria", "regalia"));
+		System.out.println(areAnagram("roma", "Amor"));
+		System.out.println(areAnagram("heart", "earth"));
+		System.out.println(areAnagram("cara", "arco"));
+	}
+
+	
 
 }

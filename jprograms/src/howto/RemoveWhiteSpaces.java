@@ -3,14 +3,12 @@ package howto;
 
 public class RemoveWhiteSpaces {
 
+	static String remove(String s) {
+		return s.replaceAll("\\s", "");
+	}
+	
 	public static void main(String[] args) {
-		
-		String s = "once upon a time";
-		
-		s = s.replaceAll("\\s", "");
-		
-		System.out.println(s);
-		
+		System.out.println(remove("once upon a time"));
 	}
 }
 

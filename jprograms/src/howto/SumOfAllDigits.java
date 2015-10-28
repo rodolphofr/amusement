@@ -1,16 +1,20 @@
 package howto;
 
 public class SumOfAllDigits {
-
-	public static void main(String[] args) {
-		
-		int n = 15, sum = 0;
+	
+	static int sum(int n) {
+		int sum = 0;
 		
 		for (int i = 1; i <= n; i++) {
 			sum += i;
 		}
 		
-		System.out.println(sum);
-		
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(sum(15));
+		System.out.println(sum(20));
+		System.out.println(sum(6));
 	}
 }

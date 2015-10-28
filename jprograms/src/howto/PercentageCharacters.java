@@ -2,10 +2,7 @@ package howto;
 
 public class PercentageCharacters {
 
-	public static void main(String[] args) {
-
-		String s = "I Love You 4Ever++";
-
+	static void percentage(String s) {
 		int dg = 0, up = 0, lc = 0, sc = 0;
 
 		char[] array = s.replaceAll("\\s", "").toCharArray();
@@ -23,7 +20,13 @@ public class PercentageCharacters {
 		System.out.printf("Percentage of Uppercase: %.1f %n", ((double) up / array.length) * 100);
 		System.out.printf("Percentage of Lowercase: %.1f %n", ((double) lc / array.length) * 100);
 		System.out.printf("Percentage of Digits: %.1f %n", ((double) dg / array.length) * 100);
-		System.out.printf("Percentage of Special Characters: %.1f ", ((double) sc / array.length) * 100);
-		
+		System.out.printf("Percentage of Special Characters: %.1f %n", ((double) sc / array.length) * 100);
+
+	}
+	
+	public static void main(String[] args) {
+		percentage("I Love You 4Ever++");
+		percentage("#!@#!$ %#¨##$ !@#!@$!");
+		percentage("Hamburgueria 162");
 	}
 }

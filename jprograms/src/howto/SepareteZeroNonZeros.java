@@ -4,22 +4,27 @@ import java.util.Arrays;
 
 public class SepareteZeroNonZeros {
 
-	public static void main(String[] args) {
-		
-		int[] a = {312, 41, 65, 0, 654, 0, 5, 0, 1, 532, 8, -10};
-		
+	static int[] separeteZeros(int[] array) {
 		int aux;
-		
-		for (int i = 0; i < a.length; i++) {
-			for (int j = i; j < a.length; j++) {
-				if (a[j] == 0) {
-					aux = a[j];
-					a[j] = a[i];
-					a[i] = aux;
+
+		for (int i = 0; i < array.length; i++) {
+			for (int j = i; j < array.length; j++) {
+				if (array[j] == 0) {
+					aux = array[j];
+					array[j] = array[i];
+					array[i] = aux;
 				}
 			}
 		}
+
+		return array;
+	}
+
+	public static void main(String[] args) {
+		int[] t1 = separeteZeros(new int[] { 312, 41, 65, 0, 654, 0, 5, 0, 1, 532, 8, -10 });
+		System.out.println(Arrays.toString(t1));
 		
-		System.out.println(Arrays.toString(a));
+		int[] t2 = separeteZeros(new int[] {2, 3, 5, 0, 6, 10, 0, 11});
+		System.out.println(Arrays.toString(t2));
 	}
 }
