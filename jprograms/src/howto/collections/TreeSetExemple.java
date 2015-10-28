@@ -11,9 +11,9 @@ public class TreeSetExemple {
 		ts.add(new Dog(2));
 		ts.add(new Dog(1));
 		ts.add(new Dog(3));
-		ts.add(new Dog(4));
-		ts.add(new Dog(5));
 		ts.add(new Dog(6));
+		ts.add(new Dog(5));
+		ts.add(new Dog(4));
 		ts.add(new Dog(1));
 		ts.add(new Dog(1));
 		

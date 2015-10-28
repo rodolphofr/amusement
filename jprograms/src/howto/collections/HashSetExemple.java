@@ -19,17 +19,8 @@ public class HashSetExemple {
 			hs2.add("string "+i);
 		}
 
-		for (Integer i : hs1) {
-			System.out.println(i);
-		}
-		
-		System.out.println("==============");
-		
-		//performative but not retain the ordination
-		for (String s : hs2) {
-			System.out.println(s);
-		}
-		
+		System.out.println(hs1.toString());
+		System.out.println(hs2.toString());
 		
 	}
 

@@ -16,16 +16,8 @@ public class LinkedHashSetExemple {
 		for (int i = 1; i <= 100; i++) {
 			lhs2.add("string "+i);
 		}
-
-		for (Integer i : lhs1) {
-			System.out.println(i);
-		}
 		
-		System.out.println("==============");
-		
-		//performative and maintains ordering
-		for (String s : lhs2) {
-			System.out.println(s);
-		}
+		System.out.println(lhs1.toString());
+		System.out.println(lhs2.toString());
 	}
 }
