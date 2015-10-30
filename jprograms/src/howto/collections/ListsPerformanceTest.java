@@ -3,7 +3,7 @@ package howto.collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class ListsPerformanceTest<E> {
+public class ListsPerformanceTest {
 	
 	public static void main(String[] args) {
 
