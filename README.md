@@ -1,2 +1,2 @@
 # amusement
-Just Having Fun
+A place to play.
